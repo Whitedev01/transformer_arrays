@@ -1,4 +1,4 @@
-var wrapperEle = document.body.querySelector("wrapper");
+var wrapperEle = document.body.querySelector(".wrapper");
 
 var chrs = [
   {name:"Optimus Prime", class: "leader", afl:"autobot", vehicle:"truck"},
@@ -12,11 +12,11 @@ var chrs = [
 function transFormer(chrs){
   var tFs = document.createElement("div");
   tFs.classList.add("character");
-  var nameEle = document.createElement("div");
+  var nameEle = document.createElement("h5");
   nameEle.innerHTML = "Name: "+ chrs.name;
-  var classEle = document.createElement("div");
+  var classEle = document.createElement("h5");
   classEle.innerHTML = "Class: "+ chrs.class.toUpperCase();
-  var aflEle = document.createElement("div");
+  var aflEle = document.createElement("h5");
   var imgEle = document.createElement("img");
   if(chrs.afl == "autobot" ){
     imgEle.src = "https://cdn4.iconfinder.com/data/icons/proglyphs-free/512/Autobot-512.png";
